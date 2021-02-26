@@ -1,13 +1,13 @@
 
 import React, { useState } from "react";
 
-import { withValidState, IWithProps } from 'react-password-validator';
+import { withValidState, WithProps } from 'react-password-validator';
 
 interface IProps {
     title: string;
 };
 
-const Component: React.FC<IProps&IWithProps> = props => {
+const Component: React.FC<IProps&WithProps> = props => {
     const [ password, setPassword ] = useState("")
     const { title, isValid, setIsValid } = props;
 
